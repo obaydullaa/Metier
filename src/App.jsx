@@ -2,10 +2,12 @@ import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route,} from "react-router-dom";
 
 import Home from './pages/Home'
+import HomeThree from './pages/HomeThree';
 import HomeTwo from './pages/HomeTwo';
 
 
 function App() {
+
   useEffect(() => {
     /*========== Responsive Menu  ==========*/
     $('.meanmenu-responsive').meanmenu({
@@ -14,7 +16,6 @@ function App() {
       meanMenuOpen: '<span></span><span></span><span></span>',
       meanMenuClose: '<i class="fal fa-times"></i>'
     });
-
   });
 
   useEffect(() => {
@@ -98,7 +99,6 @@ function App() {
         }, duration);
         return false;
       });
-
   });
 
   useEffect(() => {
@@ -173,21 +173,19 @@ function App() {
 
   // useEffect(() => {
   
-
   // });
 
 
   return (
     <>
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<Home />}/>
-        <Route path='/home' element={<Home />}>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />}/>
+          <Route path='/home' element={<Home />} />
           <Route path='/home-two' element={<HomeTwo />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-     <HomeTwo />
+          <Route path='/home-three' element={<HomeThree />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

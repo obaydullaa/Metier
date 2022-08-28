@@ -1,4 +1,5 @@
 import React from 'react'
+import HeaderOne from '../components/layouts/header/HeaderOne'
 
 function Home() {
   return (
@@ -12,100 +13,8 @@ function Home() {
                 <div className="double-bounce2"></div>
             </div>
         </div> */}
-
-        <div className="header__area">
-            <div className="container custom-container">
-                <div className="header__area-box">
-                    <div className="header__area-box-logo">
-                        <a href="index.html"> <img src="assets/img/logo-1.png" alt="" /> </a>
-                        <div className="responsive-menu"></div>
-                    </div>
-                    <div className="header__area-box-main-menu one meanmenu-responsive">
-                        <ul id="mobilemenu">
-                            <li className="menu-item-has-children"><a href="#">Home</a>
-                                <ul className="sub-menu">
-                                    <li><a href="index.html">Home 01</a> </li>
-                                    <li><a href="index-2.html">Home 02</a> </li>
-                                    <li><a href="index-3.html">Home 03</a> </li>
-                                </ul>
-                            </li>
-                            <li className="menu-item-has-children"><a href="#">Page</a>
-                                <ul className="sub-menu">
-                                    <li><a href="about.html">About</a> </li>
-                                    <li><a href="services.html">Services</a> </li>
-                                    <li><a href="services-details.html">Services Details</a> </li>
-                                    <li><a href="error.html">Error</a> </li>
-                                </ul>
-                            </li>
-                            <li className="menu-item-has-children"><a href="#">Portfolio</a>
-                                <ul className="sub-menu">
-                                    <li><a href="portfolio-1.html">Portfolio 01</a> </li>
-                                    <li><a href="portfolio-2.html">Portfolio 02</a> </li>
-                                    <li><a href="portfolio-3.html">Portfolio 03</a> </li>
-                                    <li><a href="portfolio-details.html">Portfolio Details 01</a> </li>
-                                    <li><a href="portfolio-details-2.html">Portfolio Details 02</a> </li>
-                                </ul>
-                            </li>
-                            <li className="menu-item-has-children"><a href="#">News</a>
-                                <ul className="sub-menu">
-                                    <li><a href="blog-standard.html">News</a> </li>
-                                    <li><a href="blog-details.html">News Details</a> </li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact</a> </li>
-                        </ul>
-                    </div>
-                    <div className="header__area-box-sidebar">
-                        <div className="header__area-box-sidebar-popup-icon"> <a href="#"><i className="fal fa-bars"></i></a> </div>
-                    </div>
-                    
-                    <div className="header__area-box-sidebar-popup">
-                        <div className="sidebar-close-btn one"> <i className="fal fa-times"></i> </div>
-                        <div className="header__area-box-sidebar-popup-logo">
-                            <a href="index.html"> <img src="assets/img/logo-1.png" alt="" /> </a>
-                        </div>
-                        <p>Aliquam nibh tortor, faucibus quis ligula eget, faucibus auctor sapien. Fusce vulputate magna in magna pellentesque in mauris dignissim, imperdiet risus ac, congue nunc.</p>
-                        <div className="header__area-box-sidebar-popup-contact">
-                            <h4 className="mb-25">Contact Us</h4>
-                            <form action="#">
-                                <div className="row">
-                                    <div className="col-sm-12 mb-30">
-                                        <div className="header__area-box-sidebar-popup-contact-form-item"> <i className="far fa-user"></i>
-                                            <input type="text" name="name" placeholder="Your Name" required="required" /> </div>
-                                    </div>
-                                    <div className="col-sm-12 mb-30">
-                                        <div className="header__area-box-sidebar-popup-contact-form-item"> <i className="far fa-envelope-open"></i>
-                                            <input type="text" name="email" placeholder="Email Address" required="required" /> </div>
-                                    </div>
-                                    <div className="col-sm-12 mb-30">
-                                        <div className="header__area-box-sidebar-popup-contact-form-item"> <i className="fal fa-pen"></i>
-                                            <textarea name="message" rows="5" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm-12">
-                                        <div className="header__area-box-sidebar-popup-contact-form-item">
-                                            <button className="theme-btn" type="submit">Submit Now<i className="fal fa-long-arrow-right"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div className="header__area-box-sidebar-popup-follow-us">
-                            <h4 className="mb-25">Follow Us</h4>
-                            <div className="header__area-box-sidebar-popup-follow-us-social">
-                                <ul>
-                                    <li><a href="#"><i className="fab fa-facebook-f"></i></a> </li>
-                                    <li><a href="#"><i className="fab fa-twitter"></i></a> </li>
-                                    <li><a href="#"><i className="fab fa-instagram"></i></a> </li>
-                                    <li><a href="#"><i className="fab fa-linkedin-in"></i></a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="sidebar-overlay"></div>
-                </div>
-            </div>
-        </div>
+        
+        <HeaderOne/>
 
         <div className="banner__area" data-background="assets/img/banner.png">
             <div className="container">
