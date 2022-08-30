@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-function HeaderOne() {
+function HeaderMain() {
   return (
     <>
         <div className="header__area">
@@ -22,10 +22,10 @@ function HeaderOne() {
                             </li>
                             <li className="menu-item-has-children"><a href="#">Page</a>
                                 <ul className="sub-menu">
-                                    <li><a href="about.html">About</a> </li>
-                                    <li><a href="services.html">Services</a> </li>
-                                    <li><a href="services-details.html">Services Details</a> </li>
-                                    <li><a href="error.html">Error</a> </li>
+                                    <li><Link to="/about">About</Link> </li>
+                                    <li><Link to="/services">Services</Link> </li>
+                                    <li><Link to="/services-details">Services Details</Link> </li>
+                                    <li><Link to="/error">Error</Link> </li>
                                 </ul>
                             </li>
                             <li className="menu-item-has-children"><a href="#">Portfolio</a>
@@ -101,4 +101,4 @@ function HeaderOne() {
   )
 }
 
-export default HeaderOne
+export default HeaderMain

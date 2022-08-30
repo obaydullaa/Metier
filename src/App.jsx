@@ -1,9 +1,13 @@
 import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route,} from "react-router-dom";
+import About from './pages/About';
 
 import Home from './pages/Home'
 import HomeThree from './pages/HomeThree';
 import HomeTwo from './pages/HomeTwo';
+import Services from './pages/Services';
+import ServiceDetails from './pages/ServiceDetails';
+import Error from './pages/Error';
 
 
 function App() {
@@ -27,6 +31,15 @@ function App() {
       );
     });
     
+  });
+
+  useEffect(() => {
+    /*========== Active Hover ==========*/
+    $(".features__area-item").hover(function() {
+      $(".features__area-item").removeClass("features__area-item-hover");
+      $(this).addClass("features__area-item-hover");
+    });
+
   });
 
   useEffect(() => {
@@ -150,7 +163,6 @@ function App() {
 
   });
 
-
   useEffect(() => {
     /*========== FAQ  ==========*/
     $(".faq-item-card-header").click(function() {
@@ -167,14 +179,107 @@ function App() {
 
   });
 
-//   useEffect(() => {
+  useEffect(() => {
+    /*========== Active Hover ( Home-2)  ==========*/
+    $(".features__area-two-item").hover(function() {
+      $(".features__area-two-item").removeClass("features__area-two-item-hover");
+      $(this).addClass("features__area-two-item-hover");
+    });
+ });
 
-//  });
+  useEffect(() => {
+    /*==========  Brand  (Home -02 )==========*/
+    var swiper = new Swiper(".sponsors-slider", {
+      slidesPerView: 3,
+      loop: true,
+      speed: 1500,
+      spaceBetween: 120,
+      breakpoints: {
+        0: {
+          spaceBetween: 50,
+          slidesPerView: 2
+        },
+        575: {
+          spaceBetween: 80,
+          slidesPerView: 3
+        },
+        992: {
+          slidesPerView: 4
+        },
+        1200: {
+          slidesPerView: 3
+        },
+      }
+    });
+  });
 
-  // useEffect(() => {
-  
-  // });
+  useEffect(() => {
+    /*==========  Skill Bar (Home 02)  ==========*/
+    if($('.skill__area-right-skill-item-bar').length) {
+      $('.skill__area-right-skill-item-bar').appear(function() {
+        var el = $(this);
+        var percent = el.data('width');
+        $(el).css('width', percent + '%');
+      }, {
+        accY: 0
+      });
+    };
+  });
 
+  useEffect(() => {
+    /*========== Active Hover  (Home 02) ==========*/
+    $(".portfolio__area-item").hover(function() {
+      $(".portfolio__area-item").removeClass("portfolio__area-item-hover");
+      $(this).addClass("portfolio__area-item-hover");
+    });
+  });
+
+  useEffect(() => {
+    /*==========  Skill Bar Two (Home 3)  ==========*/
+    if($('.skill__area-two-right-skill-item-bar').length) {
+      $('.skill__area-two-right-skill-item-bar').appear(function() {
+        var el = $(this);
+        var percent = el.data('width');
+        $(el).css('width', percent + '%');
+      }, {
+        accY: 0
+      });
+	};
+  });
+
+  useEffect(() => {
+    /*==========  isotope (Home - 3)  ==========*/
+    $(window).on('load', function() {
+      /*========== Project Grid  ==========*/
+      var $grid = $('.portfolio__area-two-active').isotope({});
+      /*========== Project Filter  ==========*/
+      $('.portfolio__area-two-btn').on('click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({
+          filter: filterValue
+        });
+      });
+      /*========== Project Active  ==========*/
+      $('.portfolio__area-two-btn').on('click', 'li', function() {
+        $(this).siblings('.active').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+  });
+
+  useEffect(() => {
+	// /*==========  testimonial (Home 3) ==========*/
+    var swiper = new Swiper(".reviews", {
+      slidesPerView: 1,
+      loop: true,
+      speed: 1000,
+      spaceBetween: 30,
+      pagination: {
+        el: ".reviews-pagination",
+        clickable: true,
+      },
+    });
+  });
 
   return (
     <>
@@ -184,6 +289,13 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/home-two' element={<HomeTwo />} />
           <Route path='/home-three' element={<HomeThree />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/services-details' element={<ServiceDetails />} />
+          <Route path='/error' element={<Error />} />
+
+
+          <Route path='*' element={<Error />} />
         </Routes>
       </BrowserRouter>
     </>
