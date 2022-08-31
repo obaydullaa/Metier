@@ -1,10 +1,12 @@
 import React from 'react'
+import FooterMain from '../components/layouts/footer/FooterMain'
+import HeaderMain from '../components/layouts/header/HeaderMain'
 
 function Error() {
   return (
     <>
-      <div classNameName="custom__cursor-one"></div>
-      <div classNameName="custom__cursor-two"></div>
+      <div className="custom__cursor-one"></div>
+      <div className="custom__cursor-two"></div>
       {/* <!-- Preloader start -->
       <div classNameName="theme-loader">
         <div classNameName="spinner">
