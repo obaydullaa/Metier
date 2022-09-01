@@ -8,19 +8,19 @@ function HeaderMain() {
             <div className="container custom-container">
                 <div className="header__area-box">
                     <div className="header__area-box-logo">
-                        <a href="index.html"> <img src="assets/img/logo-1.png" alt="" /> </a>
+                            <Link to='/home'> <img src="assets/img/logo-2.png"alt="" /> </Link>
                         <div className="responsive-menu"></div>
                     </div>
                     <div className="header__area-box-main-menu one meanmenu-responsive">
                         <ul id="mobilemenu">
-                            <li className="menu-item-has-children"><a href='' >Home</a>
+                            <li className="menu-item-has-children"><Link to='/home' >Home</Link>
                                 <ul className="sub-menu">
                                     <li><Link to='/home'>Home 01</Link> </li>
                                     <li><Link to='/home-two'>Home 02</Link> </li>
                                     <li><Link to='/home-three'>Home 03</Link> </li>
                                 </ul>
                             </li>
-                            <li className="menu-item-has-children"><a href="#">Page</a>
+                            <li className="menu-item-has-children"><Link to="/about">Page</Link>
                                 <ul className="sub-menu">
                                     <li><Link to="/about">About</Link> </li>
                                     <li><Link to="/services">Services</Link> </li>
@@ -28,7 +28,7 @@ function HeaderMain() {
                                     <li><Link to="/error">Error</Link> </li>
                                 </ul>
                             </li>
-                            <li className="menu-item-has-children"><a href="#">Portfolio</a>
+                            <li className="menu-item-has-children"><Link to="/portfolio-one">Portfolio</Link>
                                 <ul className="sub-menu">
                                     <li><Link to="/portfolio-one">Portfolio One</Link> </li>
                                     <li><Link to="/portfolio-two">Portfolio Two</Link> </li>
@@ -37,13 +37,13 @@ function HeaderMain() {
                                     <li><Link to="/portfolio-details-two">Portfolio Details 02</Link> </li>
                                 </ul>
                             </li>
-                            <li className="menu-item-has-children"><a href="#">News</a>
+                            <li className="menu-item-has-children"><Link to="/news">News</Link>
                                 <ul className="sub-menu">
                                     <li><Link to="/news">News</Link> </li>
                                     <li><Link to="/news-details">News Details</Link> </li>
                                 </ul>
                             </li>
-                            <li><Link to="contact">Contact</Link> </li>
+                            <li><Link to="/contact">Contact</Link> </li>
                         </ul>
                     </div>
                     <div className="header__area-box-sidebar">

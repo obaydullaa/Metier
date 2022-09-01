@@ -10,7 +10,7 @@ function HeaderThree() {
             <div className="container custom-container">
                 <div className="header__area-box">
                     <div className="header__area-box-logo">
-                        <a href="index.html"> <img src="assets/img/logo-2.png"alt="" /> </a>
+                        <Link to='/home'> <img src="assets/img/logo-2.png"alt="" /> </Link>
                     </div>
                     <div className="header__area-box-sidebar d-block">
                         <div className="header__area-box-sidebar-popup-icon"> <a href="#"><i className="fal fa-bars"></i></a> </div>
@@ -23,38 +23,38 @@ function HeaderThree() {
                             <a href="index.html"> <img src="assets/img/logo-2.png"alt="" /> </a>
                         </div>
                         <div className="header__area-box-sidebar-popup-menu">
-                            <ul>
-                                <li className="toggle-menu"><a href="#">Home<i className="fal fa-angle-down change"></i></a>
+                            <ul id="mobilemenu">
+                                <li className="menu-item-has-children"><Link to='/home' >Home</Link>
                                     <ul className="sub-menu">
                                         <li><Link to='/home'>Home 01</Link> </li>
                                         <li><Link to='/home-two'>Home 02</Link> </li>
                                         <li><Link to='/home-three'>Home 03</Link> </li>
                                     </ul>
                                 </li>
-                                <li className="toggle-menu"><a href="#">Page<i className="fal fa-angle-down change"></i></a>
+                                <li className="menu-item-has-children"><Link to="/about">Page</Link>
                                     <ul className="sub-menu">
-                                        <li><a href="about.html">About</a> </li>
-                                        <li><a href="services.html">Services</a> </li>
-                                        <li><a href="services-details.html">Services Details</a> </li>
-                                        <li><a href="error.html">Error</a> </li>
+                                        <li><Link to="/about">About</Link> </li>
+                                        <li><Link to="/services">Services</Link> </li>
+                                        <li><Link to="/services-details">Services Details</Link> </li>
+                                        <li><Link to="/error">Error</Link> </li>
                                     </ul>
                                 </li>
-                                <li className="toggle-menu"><a href="#">Portfolio<i className="fal fa-angle-down change"></i></a>
+                                <li className="menu-item-has-children"><Link to="/portfolio-one">Portfolio</Link>
                                     <ul className="sub-menu">
-                                        <li><a href="portfolio-1.html">Portfolio 01</a> </li>
-                                        <li><a href="portfolio-2.html">Portfolio 02</a> </li>
-                                        <li><a href="portfolio-3.html">Portfolio 03</a> </li>
-                                        <li><a href="portfolio-details.html">Portfolio Details 01</a> </li>
-                                        <li><a href="portfolio-details-2.html">Portfolio Details 02</a> </li>
+                                        <li><Link to="/portfolio-one">Portfolio One</Link> </li>
+                                        <li><Link to="/portfolio-two">Portfolio Two</Link> </li>
+                                        <li><Link to="/portfolio-three">Portfolio Three</Link> </li>
+                                        <li><Link to="/portfolio-details-one">Portfolio Details 01</Link> </li>
+                                        <li><Link to="/portfolio-details-two">Portfolio Details 02</Link> </li>
                                     </ul>
                                 </li>
-                                <li className="toggle-menu"><a href="#">News<i className="fal fa-angle-down change"></i></a>
+                                <li className="menu-item-has-children"><Link to="/news">News</Link>
                                     <ul className="sub-menu">
-                                        <li><a href="blog-standard.html">News</a> </li>
-                                        <li><a href="blog-details.html">News Details</a> </li>
+                                        <li><Link to="/news">News</Link> </li>
+                                        <li><Link to="/news-details">News Details</Link> </li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a> </li>
+                                <li><Link to="/contact">Contact</Link> </li>
                             </ul>
                         </div>
                         <div className="contact__info">
