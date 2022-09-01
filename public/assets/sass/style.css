@@ -576,7 +576,7 @@ Preloader CSS
   }
 }
 
-.theme-loader {
+/* .theme-loader {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -589,7 +589,7 @@ Preloader CSS
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-}
+} */
 
 /*==========================================================================
 Video Animation CSS
