@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Features() {
+function HomeFeatures() {
   return (
     <div className="features__area">
         <div className="container-fluid px-0">
@@ -45,4 +45,4 @@ function Features() {
   )
 }
 
-export default Features
+export default HomeFeatures

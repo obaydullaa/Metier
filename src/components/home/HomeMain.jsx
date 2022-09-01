@@ -1,11 +1,11 @@
 import React from 'react'
-import Services from '../../pages/Services'
 import FooterMain from '../layouts/footer/FooterMain'
 import HeaderMain from '../layouts/header/HeaderMain'
-import Features from './Features'
 import HeroSection from './HeroSection'
-import Video from './Video'
-import Work from './Work'
+import HomeWork from './HomeWork'
+import HomeFeatures from './HomeFeatures'
+import HomeServices from './HomeServices'
+import HomeVideo from './HomeVideo'
 
 function HomeMain() {
   return (
@@ -22,10 +22,10 @@ function HomeMain() {
 
         <HeaderMain/>
         <HeroSection/>
-        <Features/>
-        <Services />
-        <Video />
-        <Work/>
+        <HomeFeatures/>
+        <HomeServices />
+        <HomeVideo />
+        <HomeWork/>
         <FooterMain />
     </>
   )

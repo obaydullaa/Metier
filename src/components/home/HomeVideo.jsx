@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Video() {
+function HomeVideo() {
   return (
     <div className="video__area" data-background="assets/img/video.jpg">
         <div className="container">
@@ -14,4 +14,4 @@ function Video() {
   )
 }
 
-export default Video
+export default HomeVideo

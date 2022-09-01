@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Services() {
+function HomeServices() {
   return (
     <div className="services__area section-padding" data-background="assets/img/services.png">
         <div className="container">
@@ -78,4 +78,4 @@ function Services() {
   )
 }
 
-export default Services
+export default HomeServices

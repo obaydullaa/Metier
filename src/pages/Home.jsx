@@ -5,9 +5,7 @@ import HeaderMain from '../components/layouts/header/HeaderMain'
 
 function Home() {
   return (
-    <>
-        <HomeMain />
-    </>
+    <HomeMain />
   )
 }
 
