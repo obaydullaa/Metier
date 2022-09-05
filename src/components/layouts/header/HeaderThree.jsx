@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 function HeaderThree() {
   return (
     <>
-        <div className="header__area three">
+        <div className="header__area three all-page">
             <div className="container custom-container">
                 <div className="header__area-box">
                     <div className="header__area-box-logo">
-                        <Link to='/home'> <img src="assets/img/logo-2.png"alt="" /> </Link>
+                        <Link to='/'> <img src="assets/img/logo-2.png"alt="" /> </Link>
                     </div>
                     <div className="header__area-box-sidebar d-block">
                         <div className="header__area-box-sidebar-popup-icon"> <a href="#"><i className="fal fa-bars"></i></a> </div>
@@ -18,7 +18,7 @@ function HeaderThree() {
                     <div className="header__area-box-sidebar-popup">
                         <div className="sidebar-close-btn"> <a href="#"><i className="fal fa-times"></i></a> </div>
                         <div className="header__area-box-sidebar-popup-logo">
-                            <a href="index.html"> <img src="assets/img/logo-2.png"alt="" /> </a>
+                            <Link to="/"> <img src="assets/img/logo-2.png"alt="" /> </Link>
                         </div>
                         <div className="header__area-box-sidebar-popup-menu">
                             <ul id="mobilemenu">

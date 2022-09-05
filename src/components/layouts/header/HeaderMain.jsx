@@ -4,11 +4,11 @@ import {Link} from 'react-router-dom'
 function HeaderMain() {
   return (
     <>
-        <div className="header__area">
+        <div className="header__area all-page">
             <div className="container custom-container">
                 <div className="header__area-box">
                     <div className="header__area-box-logo">
-                            <Link to='/home'> <img src="assets/img/logo-2.png"alt="" /> </Link>
+                            <Link to='/'> <img src="assets/img/logo-2.png"alt="" /> </Link>
                         <div className="responsive-menu"></div>
                     </div>
                     <div className="header__area-box-main-menu one meanmenu-responsive">

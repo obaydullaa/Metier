@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function HomeServices() {
   return (
@@ -22,7 +23,7 @@ function HomeServices() {
                             </div>
                         </div>
                         <div className="services__area-item-content">
-                            <h4><a href="services-details.html">Designing</a></h4>
+                            <h4><Link to="/services-details">Designing</Link></h4>
                             <p>Praesent vitae augue sem. Phasellus pretium eu ipsum sit amet interdum.</p>
                         </div>
                     </div>
@@ -37,7 +38,7 @@ function HomeServices() {
                             </div>
                         </div>
                         <div className="services__area-item-content">
-                            <h4><a href="services-details.html">Development</a></h4>
+                            <h4><Link to="/services-details">Development</Link></h4>
                             <p>Praesent vitae augue sem. Phasellus pretium eu ipsum sit amet interdum.</p>
                         </div>
                     </div>
@@ -52,7 +53,7 @@ function HomeServices() {
                             </div>
                         </div>
                         <div className="services__area-item-content">
-                            <h4><a href="services-details.html">Branding</a></h4>
+                            <h4><Link to="/services-details">Branding</Link></h4>
                             <p>Praesent vitae augue sem. Phasellus pretium eu ipsum sit amet interdum.</p>
                         </div>
                     </div>
@@ -67,7 +68,7 @@ function HomeServices() {
                             </div>
                         </div>
                         <div className="services__area-item-content">
-                            <h4><a href="services-details.html">Designing</a></h4>
+                            <h4><Link to="/services-details">Designing</Link></h4>
                             <p>Praesent vitae augue sem. Phasellus pretium eu ipsum sit amet interdum.</p>
                         </div>
                     </div>
