@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function FooterMain() {
   return (
@@ -22,11 +23,11 @@ function FooterMain() {
                                 </div>
                                 <div className="footer__area-widget-about-menu three">
                                     <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="blog-standard.html">News</a></li>
-                                        <li><a href="portfolio-1.html">Portfolio</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><Link to="/">Home</Link></li>
+                                        <li><Link to="/services">Services</Link></li>
+                                        <li><Link to="/news">News</Link></li>
+                                        <li><Link to="/portfolio-one">Portfolio</Link></li>
+                                        <li><Link to="/contact">Contact</Link></li>
                                     </ul>
                                 </div>
                             </div>

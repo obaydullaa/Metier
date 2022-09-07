@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function FooterHomeTwo() {
   return (
@@ -23,11 +24,11 @@ function FooterHomeTwo() {
                                     <h4 className="mb-40">Services</h4>
                                     <div className="footer__area-widget-menu">
                                         <ul>
-                                            <li><a href="services-details.html">Development</a></li>
-                                            <li><a href="services-details.html">Designing</a></li>
-                                            <li><a href="services-details.html">Marketing</a></li>
-                                            <li><a href="services-details.html">Branding</a></li>
-                                            <li><a href="services-details.html">Market Research</a></li>
+                                            <li><Link to="/services-details">Development</Link></li>
+                                            <li><Link to="/services-details">Designing</Link></li>
+                                            <li><Link to="/services-details">Marketing</Link></li>
+                                            <li><Link to="/services-details">Branding</Link></li>
+                                            <li><Link to="/services-details">Market Research</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -37,11 +38,11 @@ function FooterHomeTwo() {
                                     <h4 className="mb-40">Link</h4>
                                     <div className="footer__area-widget-menu">
                                         <ul>
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="blog-standard.html">News</a></li>
-                                            <li><a href="portfolio-1.html">Portfolio</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><Link to="/">Home</Link></li>
+                                            <li><Link to="/services">Services</Link></li>
+                                            <li><Link to="/news">News</Link></li>
+                                            <li><Link to="/portfolio-one">Portfolio</Link></li>
+                                            <li><Link to="/contact">Contact</Link></li>
                                         </ul>
                                     </div>
                                 </div>

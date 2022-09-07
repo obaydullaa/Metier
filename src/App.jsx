@@ -146,25 +146,25 @@ function App() {
 
   useEffect(() => {
     /*==========  Features  ==========*/
-    var swiper = new Swiper(".features-slider", {
-      slidesPerView: 4,
-      loop: true,
-      speed: 1500,
-      breakpoints: {
-        0: {
-          slidesPerView: 1
-        },
-        640: {
-          slidesPerView: 2
-        },
-        991: {
-          slidesPerView: 3
-        },
-        1400: {
-          slidesPerView: 4
-        },
-      }
-    });
+    // var swiper = new Swiper(".features-slider", {
+    //   slidesPerView: 4,
+    //   loop: true,
+    //   speed: 1500,
+    //   breakpoints: {
+    //     0: {
+    //       slidesPerView: 1
+    //     },
+    //     640: {
+    //       slidesPerView: 2
+    //     },
+    //     991: {
+    //       slidesPerView: 3
+    //     },
+    //     1400: {
+    //       slidesPerView: 4
+    //     },
+    //   }
+    // });
 
   });
 
@@ -178,17 +178,17 @@ function App() {
 
   useEffect(() => {
     /*========== FAQ  ==========*/
-    $(".faq-item-card-header").click(function() {
-      if($(this).next(".faq-item-card-header-content").hasClass("active")) {
-        $(this).next(".faq-item-card-header-content").removeClass("active").slideUp()
-        $(this).children("i").removeClass("fal fa-angle-up").addClass("fal fa-angle-down")
-      } else {
-        $(".faq-item-card-header-content").removeClass("active").slideUp()
-        $(".faq-item-card .faq-item-card-header i").removeClass("fal fa-angle-up").addClass("fal fa-angle-down");
-        $(this).next(".faq-item-card-header-content").addClass("active").slideDown()
-        $(this).children("i").removeClass("fal fa-angle-down").addClass("fal fa-angle-up")
-      }
-    });
+    // $(".faq-item-card-header").click(function() {
+    //   if($(this).next(".faq-item-card-header-content").hasClass("active")) {
+    //     $(this).next(".faq-item-card-header-content").removeClass("active").slideUp()
+    //     $(this).children("i").removeClass("fal fa-angle-up").addClass("fal fa-angle-down")
+    //   } else {
+    //     $(".faq-item-card-header-content").removeClass("active").slideUp()
+    //     $(".faq-item-card .faq-item-card-header i").removeClass("fal fa-angle-up").addClass("fal fa-angle-down");
+    //     $(this).next(".faq-item-card-header-content").addClass("active").slideDown()
+    //     $(this).children("i").removeClass("fal fa-angle-down").addClass("fal fa-angle-up")
+    //   }
+    // });
 
   });
 

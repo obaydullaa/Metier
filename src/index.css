@@ -1,1 +1,7 @@
 
+.faq-item-card-header-content.inactive {
+    display: none;
+}
+.faq-item-card-header-content.active {
+    display: block;
+}

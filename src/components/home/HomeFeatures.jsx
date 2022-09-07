@@ -2,23 +2,22 @@ import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from 'react-router-dom';
 
-const featursList = [
-    {
-        id: 1,
-        img: "assets/img/features-1.jpg",
+// const featursList = [
+//     {
+//         id: 1,
+//         img: "assets/img/features-1.jpg",
 
-    }
-]
+//     }
+// ]
 
 function HomeFeatures() {
     const [isHovering, setIsHovering] = useState(null);
 
-    const activeStyle = 'features__area-item-hover'
+    let activeStyle = 'features__area-item-hover'
 
 
     const handleHover = (id) => {
         setIsHovering(id)
-        console.log('I am hovaring ' + id)
     }
 
   return (

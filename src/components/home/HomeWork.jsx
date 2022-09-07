@@ -1,6 +1,17 @@
 import React from 'react'
+import { useState } from 'react'
 
 function Work() {
+    const [accordion, setAccordion] = useState(1)
+
+    const toggleAccordion = (id) => {
+        if(accordion === id) {
+            setAccordion(-1)
+            return;
+        }
+        setAccordion(id)
+    }
+
   return (          
     <div className="work__area section-padding">
         <div className="container">
@@ -45,29 +56,41 @@ function Work() {
             <div className="row">
                 <div className="col-xl-12">
                     <div className="faq">
-                        <div className="faq-item">
+                        <div className="faq-item" onClick={()=> toggleAccordion(1)}>
                             <div className="faq-item-card">
-                                <div className="faq-item-card-header">
-                                    <h5>What are the acceptable formats for the portfolio?</h5> <i className="fal fa-angle-up"></i> </div>
-                                <div className="faq-item-card-header-content active">
+                                <div className={`faq-item-card-header ${accordion === 1 ? 'active' : ''}`}>
+                                    <h5>What are the acceptable formats for the portfolio ?</h5> 
+                                    {accordion === 1 ? (<><i className="fal fa-angle-up"></i> </>) :
+                                        (<><i className="fal fa-angle-down"></i> </>)
+                                    }
+                                </div>
+                                <div className={`faq-item-card-header-content ${accordion === 1 ? 'active': 'inactive'} `}>
                                     <p>pellentesque in dolor vel malesuada. Donec finibus libero odio, ac iaculis metus mattis quis. Curabitur a tincidunt risus, non gravida ipsum. Sed at ligula porta, dictum magna id, molestie mi. Mauris et ligula dui. Aliquam erat volutpat. Nam pharetra, risus vitae bibendum pellentesque, dui metus convallis felis, non semper leo leo nec augue. Maecenas vestibulum ornare iaculis. Integer elit arcu, lobortis id felis eu, scelerisque maximus libero.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="faq-item">
+                        <div className="faq-item" onClick={()=> toggleAccordion(2)}>
                             <div className="faq-item-card">
-                                <div className="faq-item-card-header">
-                                    <h5>Protect Your Business with Insurance?</h5> <i className="fal fa-angle-down"></i> </div>
-                                <div className="faq-item-card-header-content display-none">
+                                <div className={`faq-item-card-header ${accordion === 2 ? 'active' : ''}`}>
+                                    <h5>Protect Your Business with Insurance ?</h5> 
+                                    {accordion === 1 ? (<><i className="fal fa-angle-up"></i> </>) :
+                                        (<><i className="fal fa-angle-down"></i> </>)
+                                    }
+                                </div>
+                                <div className={`faq-item-card-header-content ${accordion === 2 ? 'active': 'inactive'} `}>
                                     <p>pellentesque in dolor vel malesuada. Donec finibus libero odio, ac iaculis metus mattis quis. Curabitur a tincidunt risus, non gravida ipsum. Sed at ligula porta, dictum magna id, molestie mi. Mauris et ligula dui. Aliquam erat volutpat. Nam pharetra, risus vitae bibendum pellentesque, dui metus convallis felis, non semper leo leo nec augue. Maecenas vestibulum ornare iaculis. Integer elit arcu, lobortis id felis eu, scelerisque maximus libero.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="faq-item m-0">
+                        <div className="faq-item m-0" onClick={()=> toggleAccordion(3)}>
                             <div className="faq-item-card">
-                                <div className="faq-item-card-header">
-                                    <h5>Open a Business Bank Account?</h5> <i className="fal fa-angle-down"></i> </div>
-                                <div className="faq-item-card-header-content display-none">
+                                <div className={`faq-item-card-header ${accordion === 3 ? 'active' : ''}`}>
+                                    <h5>Open a Business Bank Account ?</h5> 
+                                    {accordion === 1 ? (<><i className="fal fa-angle-up"></i> </>) :
+                                        (<><i className="fal fa-angle-down"></i> </>)
+                                    } 
+                                </div>
+                                <div className={`faq-item-card-header-content ${accordion === 3 ? 'active': 'inactive'} `}>
                                     <p>pellentesque in dolor vel malesuada. Donec finibus libero odio, ac iaculis metus mattis quis. Curabitur a tincidunt risus, non gravida ipsum. Sed at ligula porta, dictum magna id, molestie mi. Mauris et ligula dui. Aliquam erat volutpat. Nam pharetra, risus vitae bibendum pellentesque, dui metus convallis felis, non semper leo leo nec augue. Maecenas vestibulum ornare iaculis. Integer elit arcu, lobortis id felis eu, scelerisque maximus libero.</p>
                                 </div>
                             </div>

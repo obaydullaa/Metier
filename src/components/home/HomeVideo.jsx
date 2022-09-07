@@ -2,7 +2,11 @@ import React from 'react'
 
 function HomeVideo() {
   return (
-    <div className="video__area" data-background="assets/img/video.jpg">
+    <div className="video__area"
+    style={{
+      backgroundImage: `url("assets/img/video.jpg")`,
+    }}
+    >
         <div className="container">
             <div className="row">
                 <div className="col-xl-12">
