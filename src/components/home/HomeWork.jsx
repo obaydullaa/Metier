@@ -73,7 +73,7 @@ function Work() {
                             <div className="faq-item-card">
                                 <div className={`faq-item-card-header ${accordion === 2 ? 'active' : ''}`}>
                                     <h5>Protect Your Business with Insurance ?</h5> 
-                                    {accordion === 1 ? (<><i className="fal fa-angle-up"></i> </>) :
+                                    {accordion === 2 ? (<><i className="fal fa-angle-up"></i> </>) :
                                         (<><i className="fal fa-angle-down"></i> </>)
                                     }
                                 </div>
@@ -86,7 +86,7 @@ function Work() {
                             <div className="faq-item-card">
                                 <div className={`faq-item-card-header ${accordion === 3 ? 'active' : ''}`}>
                                     <h5>Open a Business Bank Account ?</h5> 
-                                    {accordion === 1 ? (<><i className="fal fa-angle-up"></i> </>) :
+                                    {accordion === 3 ? (<><i className="fal fa-angle-up"></i> </>) :
                                         (<><i className="fal fa-angle-down"></i> </>)
                                     } 
                                 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ScrollToTop from "react-scroll-to-top";
 
 function FooterHomeTwo() {
   return (
@@ -69,7 +70,7 @@ function FooterHomeTwo() {
                 <div className="row align-items-center copyright__area-border">
                     <div className="col-xl-6 col-lg-6 col-md-8 md-mb-20">
                         <div className="copyright__area-left md-t-center">
-                            <p>Copyright © 2022<a href="index.html"> ThemeOri</a> Website by Metier </p>
+                            <p>Copyright © 2022<Link to="/"> ThemeOri</Link> Website by Metier </p>
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-4">
@@ -86,10 +87,11 @@ function FooterHomeTwo() {
             </div>
         </div>
 
-        <div className="scroll-up">
+        {/* <div className="scroll-up">
             <svg className="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /> </svg>
-        </div>
+        </div> */}
+        <ScrollToTop smooth />
     </>
   )
 }
