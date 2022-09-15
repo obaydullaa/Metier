@@ -6492,4 +6492,15 @@ Pagination
     line-height: 150px;
   }
 }
+
+/* Custom css for react  */
+.header-img-menu.header__area.all-page,
+.header-img-menu.header__area.three.all-page {
+  position: absolute;
+  background: transparent;
+}
+.menu-banner.banner__area {
+  padding-top: 65px;
+}
+
 /*# sourceMappingURL=style.css.map */

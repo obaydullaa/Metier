@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route,} from "react-router-dom";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
@@ -21,6 +20,7 @@ import PortfolioDetailsTwo from './pages/PortfolioDetailsTwo';
 import News from './pages/News';
 import NewsDetails from './pages/NewsDetails';
 import Contact from './pages/Contact';
+import { useState } from 'react';
 
 
 function App() {
@@ -55,42 +55,6 @@ function App() {
 
   });
 
-  useEffect(() => {
-   	/*========== Custom Cursor  ==========*/
-    // if($(".custom__cursor").length) {
-    //   var cursor = document.querySelector('.custom__cursor-one');
-    //   var cursorinner = document.querySelector('.custom__cursor-two');
-    //   var a = document.querySelectorAll('a');
-    //   document.addEventListener('mousemove', function(e) {
-    //     var x = e.clientX;
-    //     var y = e.clientY;
-    //     cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
-    //   });
-    //   document.addEventListener('mousemove', function(e) {
-    //     var x = e.clientX;
-    //     var y = e.clientY;
-    //     cursorinner.style.left = x + 'px';
-    //     cursorinner.style.top = y + 'px';
-    //   });
-    //   document.addEventListener('mousedown', function() {
-    //     cursor.classList.add('click');
-    //     cursorinner.classList.add('custom__cursor-hover')
-    //   });
-    //   document.addEventListener('mouseup', function() {
-    //     cursor.classList.remove('click')
-    //     cursorinner.classList.remove('custom__cursor-hover')
-    //   });
-    //   a.forEach(item => {
-    //     item.addEventListener('mouseover', () => {
-    //       cursor.classList.add('custom__cursor__hover');
-    //     });
-    //     item.addEventListener('mouseleave', () => {
-    //       cursor.classList.remove('custom__cursor__hover');
-    //     });
-    //   })
-    // }
-
-  });
 
   useEffect(() => {
     	/*========== scroll to top  ==========*/
@@ -125,7 +89,7 @@ function App() {
       //   }, duration);
       //   return false;
       // });
-  });
+  },[]);
 
   useEffect(() => {
     /*==========  sidebar popup  ==========*/
@@ -307,6 +271,43 @@ function App() {
       $(this).find(".change").toggleClass("fal fa-angle-up fal fa-angle-down");
     });
   });
+
+    useEffect(() => {
+    /*========== Custom Cursor  ==========*/
+//    if($(".custom__cursor").length) {
+//      var cursor = document.querySelector('.custom__cursor-one');
+//      var cursorinner = document.querySelector('.custom__cursor-two');
+//      var a = document.querySelectorAll('a');
+//      document.addEventListener('mousemove', function(e) {
+//        var x = e.clientX;
+//        var y = e.clientY;
+//        cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+//      });
+//      document.addEventListener('mousemove', function(e) {
+//        var x = e.clientX;
+//        var y = e.clientY;
+//        cursorinner.style.left = x + 'px';
+//        cursorinner.style.top = y + 'px';
+//      });
+//      document.addEventListener('mousedown', function() {
+//        cursor.classList.add('click');
+//        cursorinner.classList.add('custom__cursor-hover')
+//      });
+//      document.addEventListener('mouseup', function() {
+//        cursor.classList.remove('click')
+//        cursorinner.classList.remove('custom__cursor-hover')
+//      });
+//      a.forEach(item => {
+//        item.addEventListener('mouseover', () => {
+//          cursor.classList.add('custom__cursor__hover');
+//        });
+//        item.addEventListener('mouseleave', () => {
+//          cursor.classList.remove('custom__cursor__hover');
+//        });
+//      })
+//    }
+
+ });
 
   return (
     <>

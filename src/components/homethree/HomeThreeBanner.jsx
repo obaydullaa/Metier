@@ -2,7 +2,11 @@ import React from 'react'
 
 function HomeThreeBanner() {
   return (
-    <div className="banner__area-three" data-background="assets/img/banner-3.jpg">
+    <div className="header-img-menu all-page banner__area-three" 
+    style={{
+        backgroundImage: `url("assets/img/banner-3.jpg")`,
+      }}
+    >
         <div className="container">
             <div className="row">
                 <div className="col-xl-12">

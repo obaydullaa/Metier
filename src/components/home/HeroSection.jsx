@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroSection() {
   return (
-    <div className="banner__area" data-background="assets/img/banner.png">
+    <div className="menu-banner banner__area" data-background="assets/img/banner.png">
         <div className="container">
             <div className="row">
                 <div className="col-xl-12">
