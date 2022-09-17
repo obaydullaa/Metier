@@ -203,6 +203,7 @@ function App() {
     };
   });
 
+  
   useEffect(() => {
     /*========== Active Hover  (Home 02) ==========*/
     $(".portfolio__area-item").hover(function() {
