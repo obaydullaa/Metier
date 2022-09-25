@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function HomeTwoPortfolio() {
+    const [isHovering, setIsHovering ] = useState(null);
+    let activeStyle = 'portfolio__area-item-hover';
+    const handleHover = (id) => {
+       setIsHovering(id)
+   }
   return (
     <div className="portfolio__area section-padding">
         <div className="container">
@@ -12,7 +17,8 @@ function HomeTwoPortfolio() {
             </div>
             <div className="row mb-30">
                 <div className="col-xl-4 col-lg-4 lg-mb-30">
-                    <div className="portfolio__area-item">
+                    <div onMouseOver={() => handleHover(1)}
+                     className={` ${isHovering === 1 ? activeStyle : ''} portfolio__area-item`}>
                         <div className="portfolio__area-item-image"> <img className="img__full" src="assets/img/portfolio/portfolio-1.jpg" alt="" />
                             <div className="portfolio__area-item-image-content">
                                 <div className="portfolio__area-item-image-content-text"> <span>Photography</span>
@@ -22,7 +28,8 @@ function HomeTwoPortfolio() {
                     </div>
                 </div>
                 <div className="col-xl-8 col-lg-8">
-                    <div className="portfolio__area-item portfolio__area-item-hover">
+                    <div onMouseOver={() => handleHover(6)}
+                     className={` ${isHovering === 6 ? activeStyle : ''} portfolio__area-item`}>
                         <div className="portfolio__area-item-image"> <img className="img__full" src="assets/img/portfolio/portfolio-2.jpg" alt="" />
                             <div className="portfolio__area-item-image-content">
                                 <div className="portfolio__area-item-image-content-text"> <span>Photography</span>
@@ -34,7 +41,8 @@ function HomeTwoPortfolio() {
             </div>
             <div className="row mb-30">
                 <div className="col-xl-8 col-lg-8 lg-mb-30">
-                    <div className="portfolio__area-item">
+                    <div onMouseOver={() => handleHover(2)}
+                     className={` ${isHovering === 2 ? activeStyle : ''} portfolio__area-item`}>
                         <div className="portfolio__area-item-image"> <img className="img__full" src="assets/img/portfolio/portfolio-3.jpg" alt="" />
                             <div className="portfolio__area-item-image-content">
                                 <div className="portfolio__area-item-image-content-text"> <span>Photography</span>
@@ -44,7 +52,8 @@ function HomeTwoPortfolio() {
                     </div>
                 </div>
                 <div className="col-xl-4 col-lg-4">
-                    <div className="portfolio__area-item">
+                    <div onMouseOver={() => handleHover(3)}
+                     className={` ${isHovering === 3 ? activeStyle : ''} portfolio__area-item`}>
                         <div className="portfolio__area-item-image"> <img className="img__full" src="assets/img/portfolio/portfolio-4.jpg" alt="" />
                             <div className="portfolio__area-item-image-content">
                                 <div className="portfolio__area-item-image-content-text"> <span>Photography</span>
@@ -56,7 +65,8 @@ function HomeTwoPortfolio() {
             </div>
             <div className="row">
                 <div className="col-xl-6 col-lg-6 lg-mb-30">
-                    <div className="portfolio__area-item">
+                    <div onMouseOver={() => handleHover(4)}
+                     className={` ${isHovering === 4 ? activeStyle : ''} portfolio__area-item`}>
                         <div className="portfolio__area-item-image"> <img className="img__full" src="assets/img/portfolio/portfolio-5.jpg" alt="" />
                             <div className="portfolio__area-item-image-content">
                                 <div className="portfolio__area-item-image-content-text"> <span>Photography</span>
@@ -66,7 +76,8 @@ function HomeTwoPortfolio() {
                     </div>
                 </div>
                 <div className="col-xl-6 col-lg-6">
-                    <div className="portfolio__area-item">
+                    <div onMouseOver={() => handleHover(5)}
+                     className={` ${isHovering === 5 ? activeStyle : ''} portfolio__area-item`}>
                         <div className="portfolio__area-item-image"> <img className="img__full" src="assets/img/portfolio/portfolio-6.jpg" alt="" />
                             <div className="portfolio__area-item-image-content">
                                 <div className="portfolio__area-item-image-content-text"> <span>Photography</span>

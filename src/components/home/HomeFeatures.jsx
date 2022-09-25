@@ -2,14 +2,6 @@ import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from 'react-router-dom';
 
-// const featursList = [
-//     {
-//         id: 1,
-//         img: "assets/img/features-1.jpg",
-
-//     }
-// ]
-
 function HomeFeatures() {
     const [isHovering, setIsHovering] = useState(null);
 

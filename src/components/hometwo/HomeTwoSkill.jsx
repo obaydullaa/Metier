@@ -2,7 +2,11 @@ import React from 'react'
 
 function HomeTwoSkill() {
   return (
-    <div className="skill__area" data-background="assets/img/skill.jpg">
+    <div className="skill__area" 
+    style={{
+        backgroundImage: `url("assets/img/skill.jpg")`,
+    }}
+        >
         <div className="container">
             <div className="row">
                 <div className="col-xl-6 col-lg-4 lg-mb-50">

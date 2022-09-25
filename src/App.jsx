@@ -158,10 +158,10 @@ function App() {
 
   useEffect(() => {
     /*========== Active Hover ( Home-2)  ==========*/
-    $(".features__area-two-item").hover(function() {
-      $(".features__area-two-item").removeClass("features__area-two-item-hover");
-      $(this).addClass("features__area-two-item-hover");
-    });
+    // $(".features__area-two-item").hover(function() {
+    //   $(".features__area-two-item").removeClass("features__area-two-item-hover");
+    //   $(this).addClass("features__area-two-item-hover");
+    // });
  });
 
   useEffect(() => {
