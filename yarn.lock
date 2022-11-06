@@ -791,6 +791,11 @@
     "escalade" "^3.1.1"
     "picocolors" "^1.0.0"
 
+"venobox@^2.0.4":
+  "integrity" "sha512-+AMA5+Y/Ul9uSUk0I4lYG0DLVJDZmRq1TWXr51jZSz+zPyLWx4Uxwh68W9nYoqqWFrsWJiZPVpr1xzYYSjQlDw=="
+  "resolved" "https://registry.npmjs.org/venobox/-/venobox-2.0.4.tgz"
+  "version" "2.0.4"
+
 "vite@^3.0.0":
   "integrity" "sha512-bRvrt9Tw8EGW4jj64aYFTnVg134E8hgDxyl/eEHnxiGqYk7/pTPss6CWlurqPOUzqvEoZkZ58Ws+Iu8MB87iMA=="
   "resolved" "https://registry.npmjs.org/vite/-/vite-3.0.5.tgz"

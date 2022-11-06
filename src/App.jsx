@@ -33,7 +33,7 @@ function App() {
       meanMenuOpen: '<span></span><span></span><span></span>',
       meanMenuClose: '<i class="fal fa-times"></i>'
     });
-  });
+  }, []);
 
   useEffect(() => {
     /*==========  Data-Background ========== */
@@ -44,7 +44,7 @@ function App() {
       );
     });
     
-  });
+  }, []);
 
   useEffect(() => {
     /*========== Active Hover ==========*/
@@ -53,7 +53,7 @@ function App() {
     //   $(this).addClass("features__area-item-hover");
     // });
 
-  });
+  }, []);
 
 
   useEffect(() => {
@@ -106,7 +106,7 @@ function App() {
       $('.sidebar-overlay').removeClass('show');
     });
 
-  });
+  }, []);
 
   useEffect(() => {
     /*==========  Features  ==========*/
@@ -134,11 +134,11 @@ function App() {
 
   useEffect(() => {
     /*==========  video-popup  ==========*/
-    $('.video-popup').magnificPopup({
-      type: 'iframe'
-    });
+    // $('.video-popup').magnificPopup({
+    //   type: 'iframe'
+    // });
 
-  });
+  }, []);
 
   useEffect(() => {
     /*========== FAQ  ==========*/
@@ -166,28 +166,28 @@ function App() {
 
   useEffect(() => {
     /*==========  Brand  (Home -02 )==========*/
-    var swiper = new Swiper(".sponsors-slider", {
-      slidesPerView: 3,
-      loop: true,
-      speed: 1500,
-      spaceBetween: 120,
-      breakpoints: {
-        0: {
-          spaceBetween: 50,
-          slidesPerView: 2
-        },
-        575: {
-          spaceBetween: 80,
-          slidesPerView: 3
-        },
-        992: {
-          slidesPerView: 4
-        },
-        1200: {
-          slidesPerView: 3
-        },
-      }
-    });
+    // var swiper = new Swiper(".sponsors-slider", {
+    //   slidesPerView: 3,
+    //   loop: true,
+    //   speed: 1500,
+    //   spaceBetween: 120,
+    //   breakpoints: {
+    //     0: {
+    //       spaceBetween: 50,
+    //       slidesPerView: 2
+    //     },
+    //     575: {
+    //       spaceBetween: 80,
+    //       slidesPerView: 3
+    //     },
+    //     992: {
+    //       slidesPerView: 4
+    //     },
+    //     1200: {
+    //       slidesPerView: 3
+    //     },
+    //   }
+    // });
   });
 
   useEffect(() => {
@@ -201,15 +201,15 @@ function App() {
         accY: 0
       });
     };
-  });
+  },[]);
 
   
   useEffect(() => {
     /*========== Active Hover  (Home 02) ==========*/
-    $(".portfolio__area-item").hover(function() {
-      $(".portfolio__area-item").removeClass("portfolio__area-item-hover");
-      $(this).addClass("portfolio__area-item-hover");
-    });
+    // $(".portfolio__area-item").hover(function() {
+    //   $(".portfolio__area-item").removeClass("portfolio__area-item-hover");
+    //   $(this).addClass("portfolio__area-item-hover");
+    // });
   });
 
   useEffect(() => {
@@ -223,7 +223,7 @@ function App() {
         accY: 0
       });
 	};
-  });
+  }, []);
 
   useEffect(() => {
     /*==========  isotope (Home - 3)  ==========*/
@@ -243,7 +243,7 @@ function App() {
         $(this).addClass('active');
       });
     });
-  });
+  }, []);
 
   useEffect(() => {
 	// /*==========  testimonial (Home 3) ==========*/
@@ -257,9 +257,10 @@ function App() {
         clickable: true,
       },
     });
-  });
+  }, []);
   
   useEffect(() => {
+    
     /*==========  counterUp (About) ==========*/
     var counter = $('.counter');
     counter.counterUp({
@@ -271,7 +272,7 @@ function App() {
       $(this).parent(".toggle-menu").children("ul").slideToggle("100");
       $(this).find(".change").toggleClass("fal fa-angle-up fal fa-angle-down");
     });
-  });
+  }, []);
 
     useEffect(() => {
     /*========== Custom Cursor  ==========*/

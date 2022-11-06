@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Venobox from 'venobox'
 
 function HomeTwoSkill() {
+    useEffect(() => {
+        new Venobox({
+          autoPlay: false,
+          spinner: 'wave',
+        })
+      }, [])
   return (
     <div className="skill__area" 
     style={{
@@ -11,7 +18,13 @@ function HomeTwoSkill() {
             <div className="row">
                 <div className="col-xl-6 col-lg-4 lg-mb-50">
                     <div className="skill__area-left">
-                        <div className="skill__area-left-play-icon video-pulse"> <a className="video-popup" href="https://www.youtube.com/watch?v=0WC-tD-njcA"><i className="fas fa-play"></i></a> </div>
+                        <div className="skill__area-left-play-icon video-pulse"> 
+                            <a className="video-popup venobox"
+                            data-vbtype='video' 
+                            href="https://www.youtube.com/watch?v=0WC-tD-njcA">
+                            <i className="fas fa-play"></i>
+                            </a> 
+                            </div>
                     </div>
                 </div>
                 <div className="col-xl-6 col-lg-8">

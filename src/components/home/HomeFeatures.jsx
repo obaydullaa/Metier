@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom';
 
 function HomeFeatures() {
     const [isHovering, setIsHovering] = useState(null);
-
     let activeStyle = 'features__area-item-hover'
-
 
     const handleHover = (id) => {
         setIsHovering(id)
@@ -19,7 +17,7 @@ function HomeFeatures() {
                 <div className="row gx-0">
                     <div className="col-xl-12">
                         <Swiper
-                             slidesPerView={4}
+                             slidesPerView={1}
                              spaceBetween={0}
                              loop={true}
                              className="mySwiper"
