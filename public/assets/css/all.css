@@ -12783,3 +12783,35 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Pro';
   font-weight: 900; }
+
+.reviews__area-left .swiper-wrapper {
+  margin-bottom: 60px;
+}
+.reviews__area-left .swiper-pagination-bullet {
+  border-radius: 50%;
+  background: #F94D1D;
+  width: 8px;
+  height: 8px;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  opacity: 1;
+  margin: 0;
+  margin-right: 20px !important;
+  position: relative;
+}
+.reviews__area-left .swiper-pagination-bullet::after {
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 1px solid #F94D1D;
+  top: 50%;
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.reviews__area-left .swiper-pagination-bullet-active::after {
+  opacity: 1;
+}

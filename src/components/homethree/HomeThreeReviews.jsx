@@ -1,5 +1,11 @@
-import React from 'react'
+import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper";
 
 function HomeThreeReviews() {
   return (
@@ -13,9 +19,10 @@ function HomeThreeReviews() {
                         <div className="swiper reviews">
                             <Swiper
                             slidesPerView={1}
-                            spaceBetween={0}
                             loop={true}
                             spaceBetween={50} 
+                            pagination={true} 
+                            modules={[Pagination]} 
                             className="mySwiper">
                                 <Swiper className="swiper-wrapper">
                                 <SwiperSlide className="reviews__area-left-item swiper-slide">
@@ -51,13 +58,8 @@ function HomeThreeReviews() {
                                     </div>
                                 </SwiperSlide>
                             </Swiper>
-
-
-                        </Swiper>
+                            </Swiper>
                             
-                        </div>
-                        <div className="reviews__area-left-dots">
-                            <div className="reviews-pagination"></div>
                         </div>
                         <div className="reviews__area-left-quote"><img src="assets/img/icon/quote.png"alt="" /></div>
                     </div>
