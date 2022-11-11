@@ -9,7 +9,6 @@ function HomeTwoSponsors() {
                 <div className="col-xl-6">
                     <Swiper
                         slidesPerView={3}
-                        spaceBetween={0}
                         loop={true}
                         spaceBetween={50} 
                         className="mySwiper" >

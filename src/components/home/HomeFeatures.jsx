@@ -17,7 +17,7 @@ function HomeFeatures() {
                 <div className="row gx-0">
                     <div className="col-xl-12">
                         <Swiper
-                             slidesPerView={1}
+                             slidesPerView={4}
                              spaceBetween={0}
                              loop={true}
                              className="mySwiper"

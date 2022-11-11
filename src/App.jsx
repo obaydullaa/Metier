@@ -37,12 +37,12 @@ function App() {
 
   useEffect(() => {
     /*==========  Data-Background ========== */
-    $("[data-background").each(function () {
-      $(this).css(
-        "background-image",
-        "url( " + $(this).attr("data-background") + "  )"
-      );
-    });
+    // $("[data-background").each(function () {
+    //   $(this).css(
+    //     "background-image",
+    //     "url( " + $(this).attr("data-background") + "  )"
+    //   );
+    // });
     
   }, []);
 
@@ -165,32 +165,6 @@ function App() {
  });
 
   useEffect(() => {
-    /*==========  Brand  (Home -02 )==========*/
-    // var swiper = new Swiper(".sponsors-slider", {
-    //   slidesPerView: 3,
-    //   loop: true,
-    //   speed: 1500,
-    //   spaceBetween: 120,
-    //   breakpoints: {
-    //     0: {
-    //       spaceBetween: 50,
-    //       slidesPerView: 2
-    //     },
-    //     575: {
-    //       spaceBetween: 80,
-    //       slidesPerView: 3
-    //     },
-    //     992: {
-    //       slidesPerView: 4
-    //     },
-    //     1200: {
-    //       slidesPerView: 3
-    //     },
-    //   }
-    // });
-  });
-
-  useEffect(() => {
     /*==========  Skill Bar (Home 02)  ==========*/
     if($('.skill__area-right-skill-item-bar').length) {
       $('.skill__area-right-skill-item-bar').appear(function() {
@@ -201,16 +175,8 @@ function App() {
         accY: 0
       });
     };
+    
   },[]);
-
-  
-  useEffect(() => {
-    /*========== Active Hover  (Home 02) ==========*/
-    // $(".portfolio__area-item").hover(function() {
-    //   $(".portfolio__area-item").removeClass("portfolio__area-item-hover");
-    //   $(this).addClass("portfolio__area-item-hover");
-    // });
-  });
 
   useEffect(() => {
     /*==========  Skill Bar Two (Home 3)  ==========*/
@@ -242,20 +208,6 @@ function App() {
         $(this).siblings('.active').removeClass('active');
         $(this).addClass('active');
       });
-    });
-  }, []);
-
-  useEffect(() => {
-	// /*==========  testimonial (Home 3) ==========*/
-    var swiper = new Swiper(".reviews", {
-      slidesPerView: 1,
-      loop: true,
-      speed: 1000,
-      spaceBetween: 30,
-      pagination: {
-        el: ".reviews-pagination",
-        clickable: true,
-      },
     });
   }, []);
   
