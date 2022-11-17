@@ -41,10 +41,10 @@ function HomeThreePortfolio() {
 			</div>
 			<div className="row portfolio__area-two-active">
                 {
-                    items.map((elem) => {
+                    items.map((elem, i) => {
                         const {id, image, content, link } = elem;
                         return (
-                            <div className="col-xl-4 col-lg-4 col-md-6 portfolio-item mb-30">
+                            <div key={i} className="col-xl-4 col-lg-4 col-md-6 portfolio-item mb-30">
                                 <div className="portfolio__area-two-item"> <img className="img__full" src={image} alt={id}/>
                                     <div className="portfolio__area-two-item-content">
                                         <span>{content}</span>

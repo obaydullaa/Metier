@@ -1,26 +1,12 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Routes, Route,} from "react-router-dom";
+import AnimatedCursor from "react-animated-cursor"
 import "swiper/css";
 import "swiper/css/pagination";
+import Routes from './router/Routes';
+
 // import required modules
 import { Pagination } from "swiper";
 
-import About from './pages/About';
-import Home from './pages/Home'
-import HomeThree from './pages/HomeThree';
-import HomeTwo from './pages/HomeTwo';
-import Services from './pages/Services';
-import ServiceDetails from './pages/ServiceDetails';
-import Error from './pages/Error';
-import PortfolioOne from './pages/PortfolioOne';
-import PortfolioTwo from './pages/PortfolioTwo';
-import PortfolioThree from './pages/PortfolioThree';
-import PortfolioDetailsOne from './pages/PortfolioDetailsOne';
-import PortfolioDetailsTwo from './pages/PortfolioDetailsTwo';
-import News from './pages/News';
-import NewsDetails from './pages/NewsDetails';
-import Contact from './pages/Contact';
-import { useState } from 'react';
 
 
 function App() {
@@ -35,25 +21,7 @@ function App() {
     });
   }, []);
 
-  useEffect(() => {
-    /*==========  Data-Background ========== */
-    // $("[data-background").each(function () {
-    //   $(this).css(
-    //     "background-image",
-    //     "url( " + $(this).attr("data-background") + "  )"
-    //   );
-    // });
-    
-  }, []);
 
-  useEffect(() => {
-    /*========== Active Hover ==========*/
-    // $(".features__area-item").hover(function() {
-    //   $(".features__area-item").removeClass("features__area-item-hover");
-    //   $(this).addClass("features__area-item-hover");
-    // });
-
-  }, []);
 
 
   useEffect(() => {
@@ -108,61 +76,7 @@ function App() {
 
   }, []);
 
-  useEffect(() => {
-    /*==========  Features  ==========*/
-    // var swiper = new Swiper(".features-slider", {
-    //   slidesPerView: 4,
-    //   loop: true,
-    //   speed: 1500,
-    //   breakpoints: {
-    //     0: {
-    //       slidesPerView: 1
-    //     },
-    //     640: {
-    //       slidesPerView: 2
-    //     },
-    //     991: {
-    //       slidesPerView: 3
-    //     },
-    //     1400: {
-    //       slidesPerView: 4
-    //     },
-    //   }
-    // });
 
-  });
-
-  useEffect(() => {
-    /*==========  video-popup  ==========*/
-    // $('.video-popup').magnificPopup({
-    //   type: 'iframe'
-    // });
-
-  }, []);
-
-  useEffect(() => {
-    /*========== FAQ  ==========*/
-    // $(".faq-item-card-header").click(function() {
-    //   if($(this).next(".faq-item-card-header-content").hasClass("active")) {
-    //     $(this).next(".faq-item-card-header-content").removeClass("active").slideUp()
-    //     $(this).children("i").removeClass("fal fa-angle-up").addClass("fal fa-angle-down")
-    //   } else {
-    //     $(".faq-item-card-header-content").removeClass("active").slideUp()
-    //     $(".faq-item-card .faq-item-card-header i").removeClass("fal fa-angle-up").addClass("fal fa-angle-down");
-    //     $(this).next(".faq-item-card-header-content").addClass("active").slideDown()
-    //     $(this).children("i").removeClass("fal fa-angle-down").addClass("fal fa-angle-up")
-    //   }
-    // });
-
-  });
-
-  useEffect(() => {
-    /*========== Active Hover ( Home-2)  ==========*/
-    // $(".features__area-two-item").hover(function() {
-    //   $(".features__area-two-item").removeClass("features__area-two-item-hover");
-    //   $(this).addClass("features__area-two-item-hover");
-    // });
- });
 
   useEffect(() => {
     /*==========  Skill Bar (Home 02)  ==========*/
@@ -195,14 +109,7 @@ function App() {
     /*==========  isotope (Home - 3)  ==========*/
     $(window).on('load', function() {
       /*========== Project Grid  ==========*/
-      // var $grid = $('.portfolio__area-two-active').isotope({});
-      /*========== Project Filter  ==========*/
-      // $('.portfolio__area-two-btn').on('click', 'li', function() {
-      //   var filterValue = $(this).attr('data-filter');
-      //   $grid.isotope({
-      //     filter: filterValue
-      //   });
-      // });
+
       /*========== Project Active  ==========*/
       $('.portfolio__area-two-btn').on('click', 'li', function() {
         $(this).siblings('.active').removeClass('active');
@@ -263,9 +170,11 @@ function App() {
 
  });
 
+
+
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route index element={<Home />}/>
           <Route path='/home' element={<Home />} />
@@ -287,7 +196,8 @@ function App() {
 
           <Route path='*' element={<Error />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Routes/>
     </>
   )
 }

@@ -662,7 +662,7 @@
     "picocolors" "^1.0.0"
     "source-map-js" "^1.0.2"
 
-"prop-types@^15.5.0":
+"prop-types@^15.5.0", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -671,7 +671,14 @@
     "object-assign" "^4.1.1"
     "react-is" "^16.13.1"
 
-"react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8":
+"react-animated-cursor@^2.5.2":
+  "integrity" "sha512-eIURDOrMENJ2LIggS6RZJ+P39/zVCF4AihDQNmyS+q973+ZqXP5k3yReub84JOpee1f7zHCoy+sYhsf3lxAQpQ=="
+  "resolved" "https://registry.npmjs.org/react-animated-cursor/-/react-animated-cursor-2.5.2.tgz"
+  "version" "2.5.2"
+  dependencies:
+    "prop-types" "^15.8.1"
+
+"react-dom@^16 || ^17 || ^18", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -717,7 +724,7 @@
     "clsx" "^1.1.0"
     "prop-types" "^15.5.0"
 
-"react@^16.8.0 || 17.x || ^18", "react@^18.0.0", "react@^18.2.0", "react@>=16.8":
+"react@^16 || ^17 || ^18", "react@^16.8.0 || 17.x || ^18", "react@^18.0.0", "react@^18.2.0", "react@>=16.8":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
