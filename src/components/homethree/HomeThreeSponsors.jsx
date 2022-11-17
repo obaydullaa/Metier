@@ -1,5 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 function HomeThreeSponsors() {
   return (

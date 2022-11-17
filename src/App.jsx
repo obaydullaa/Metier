@@ -195,14 +195,14 @@ function App() {
     /*==========  isotope (Home - 3)  ==========*/
     $(window).on('load', function() {
       /*========== Project Grid  ==========*/
-      var $grid = $('.portfolio__area-two-active').isotope({});
+      // var $grid = $('.portfolio__area-two-active').isotope({});
       /*========== Project Filter  ==========*/
-      $('.portfolio__area-two-btn').on('click', 'li', function() {
-        var filterValue = $(this).attr('data-filter');
-        $grid.isotope({
-          filter: filterValue
-        });
-      });
+      // $('.portfolio__area-two-btn').on('click', 'li', function() {
+      //   var filterValue = $(this).attr('data-filter');
+      //   $grid.isotope({
+      //     filter: filterValue
+      //   });
+      // });
       /*========== Project Active  ==========*/
       $('.portfolio__area-two-btn').on('click', 'li', function() {
         $(this).siblings('.active').removeClass('active');

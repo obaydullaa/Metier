@@ -1,0 +1,68 @@
+
+const PortfolioData = [
+    {
+        id: 1,
+        image: 'assets/img/portfolio/portfolio-7.jpg',
+        content: 'design',
+        link:  'design',
+        category: 'design',
+    },
+    {
+        id: 2,
+        image: 'assets/img/portfolio/portfolio-8.jpg',
+        content: 'Design',
+        link:  'Design',
+        category: 'design',
+    },
+    {
+        id: 3,
+        image: 'assets/img/portfolio/portfolio-9.jpg',
+        content: 'Development',
+        link:  'Development',
+        category: 'development',
+    },
+    {
+        id: 4,
+        image: 'assets/img/portfolio/portfolio-10.jpg',
+        content: 'Strategy',
+        link:  'Strategy',
+        category: 'strategy',
+    },
+    {
+        id: 5,
+        image: 'assets/img/portfolio/portfolio-11.jpg',
+        content: 'Branding',
+        link:  'Branding',
+        category: 'branding',
+    },
+    {
+        id: 6,
+        image: 'assets/img/portfolio/portfolio-12.jpg',
+        content: 'Development',
+        link:  'Development',
+        category: 'development',
+    },
+    {
+        id: 7,
+        image: 'assets/img/portfolio/portfolio-13.jpg',
+        content: 'Marketing',
+        link:  'Marketing',
+        category: 'marketing',
+    },
+    {
+        id: 8,
+        image: 'assets/img/portfolio/portfolio-14.jpg',
+        content: 'Strategy',
+        link:  'Strategy',
+        category: 'strategy',
+    },
+    {
+        id: 9,
+        image: 'assets/img/portfolio/portfolio-15.jpg',
+        content: 'Branding',
+        link:  'Branding',
+        category: 'branding',
+    },
+]
+
+export default PortfolioData;
