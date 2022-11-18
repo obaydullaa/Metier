@@ -12,9 +12,6 @@ import HomeThreeSponsors from './HomeThreeSponsors'
 function HomeThreeMain() {
   return (
     <>
-          <div className="custom__cursor-one "></div>
-        <div className="custom__cursor-two "></div>
-
 
         {/* <div classNameName="theme-loader">
             <div classNameName="spinner">

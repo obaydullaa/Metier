@@ -465,43 +465,43 @@ Video Animation CSS
 /*==========================================================================
 Custom Cursor
 ========================================================================== */
-.custom__cursor-one {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    border: 2px solid $primary-color;
-    transition: all 200ms ease-out;
-    position: fixed;
-    pointer-events: none;
-    left: 0;
-    top: 0;
-    transform: translate(calc(-50% + 5px), -50%);
-    z-index: 999999;
-	&.main {
-		border-color: $primary-color-1;
-	}
-}
-.custom__cursor-two {
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    background: $primary-color;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: width .3s, height .3s, opacity .3s;
-    z-index: 999999;            
-	&.main {
-		background: $primary-color-1;
-	}
-}
-.custom__cursor__hover {
-    background: $primary-color;
-    opacity: 0.2;
-    width: 70px;
-    height: 70px;
-	&.main {
-		background: $primary-color-1;
-		opacity: 0.4;
-	}
-}
+// .custom__cursor-one {
+//     width: 30px;
+//     height: 30px;
+//     border-radius: 100%;
+//     border: 2px solid $primary-color;
+//     transition: all 200ms ease-out;
+//     position: fixed;
+//     pointer-events: none;
+//     left: 0;
+//     top: 0;
+//     transform: translate(calc(-50% + 5px), -50%);
+//     z-index: 999999;
+// 	&.main {
+// 		border-color: $primary-color-1;
+// 	}
+// }
+// .custom__cursor-two {
+//     width: 6px;
+//     height: 6px;
+//     border-radius: 100%;
+//     background: $primary-color;
+//     position: fixed;
+//     transform: translate(-50%, -50%);
+//     pointer-events: none;
+//     transition: width .3s, height .3s, opacity .3s;
+//     z-index: 999999;            
+// 	&.main {
+// 		background: $primary-color-1;
+// 	}
+// }
+// .custom__cursor__hover {
+//     background: $primary-color;
+//     opacity: 0.2;
+//     width: 70px;
+//     height: 70px;
+// 	&.main {
+// 		background: $primary-color-1;
+// 		opacity: 0.4;
+// 	}
+// }

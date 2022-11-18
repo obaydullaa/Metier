@@ -499,7 +499,7 @@ Menu Box CSS
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 99999;
+	z-index: 999;
 	opacity: 0.85;
     background: $text-color-1;
 	display: none;
@@ -508,6 +508,9 @@ Menu Box CSS
         display: block;
     }
 }
+
+
+
 /*==========================================================================
 Mean Menu Css
 ==========================================================================*/

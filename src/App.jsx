@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
-import AnimatedCursor from "react-animated-cursor"
+// import AnimatedCursor from "react-animated-cursor"
 import "swiper/css";
 import "swiper/css/pagination";
 import Routes from './router/Routes';
 
 // import required modules
-import { Pagination } from "swiper";
+// import { Pagination } from "swiper";
 
 
 
@@ -133,72 +133,28 @@ function App() {
     });
   }, []);
 
-    useEffect(() => {
-    /*========== Custom Cursor  ==========*/
-//    if($(".custom__cursor").length) {
-//      var cursor = document.querySelector('.custom__cursor-one');
-//      var cursorinner = document.querySelector('.custom__cursor-two');
-//      var a = document.querySelectorAll('a');
-//      document.addEventListener('mousemove', function(e) {
-//        var x = e.clientX;
-//        var y = e.clientY;
-//        cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
-//      });
-//      document.addEventListener('mousemove', function(e) {
-//        var x = e.clientX;
-//        var y = e.clientY;
-//        cursorinner.style.left = x + 'px';
-//        cursorinner.style.top = y + 'px';
-//      });
-//      document.addEventListener('mousedown', function() {
-//        cursor.classList.add('click');
-//        cursorinner.classList.add('custom__cursor-hover')
-//      });
-//      document.addEventListener('mouseup', function() {
-//        cursor.classList.remove('click')
-//        cursorinner.classList.remove('custom__cursor-hover')
-//      });
-//      a.forEach(item => {
-//        item.addEventListener('mouseover', () => {
-//          cursor.classList.add('custom__cursor__hover');
-//        });
-//        item.addEventListener('mouseleave', () => {
-//          cursor.classList.remove('custom__cursor__hover');
-//        });
-//      })
-//    }
 
- });
+  /*========== Custom Cursor  ==========*/
 
 
+//  color="2px solid rgb(249 77 29)"
 
   return (
-    <>
-      {/* <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />}/>
-          <Route path='/home' element={<Home />} />
-          <Route path='/home-two' element={<HomeTwo />} />
-          <Route path='/home-three' element={<HomeThree />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/services-details' element={<ServiceDetails />} />
-          <Route path='/error' element={<Error />} />
-          <Route path='/portfolio-one' element={<PortfolioOne />} />
-          <Route path='/portfolio-two' element={<PortfolioTwo />} />
-          <Route path='/portfolio-three' element={<PortfolioThree />} />
-          <Route path='/portfolio-details-one' element={<PortfolioDetailsOne />} />
-          <Route path='/portfolio-details-two' element={<PortfolioDetailsTwo />} />
-          <Route path='/news' element={<News />} />
-          <Route path='/news-details' element={<NewsDetails />} />
-          <Route path='/contact' element={<Contact />} />
+    <div className='metier_all_wrap'>
+      {/* <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={1.3}
+        outerAlpha={0}
+        hasBlendMode={false}
+        outerStyle={{
+          border: '2px solid rgb(249 77 29)'
+        }}
+      /> */}
 
-
-          <Route path='*' element={<Error />} />
-        </Routes>
-      </BrowserRouter> */}
       <Routes/>
-    </>
+    </div>
   )
 }
 

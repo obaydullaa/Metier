@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function HeaderTwo() {
   return (
     <>
-        <div className="header-img-menu header__area all-page">
+        <div className="header-img-menu header__area">
             <div className="container">
                 <div className="header__area-box">
                     <div className="header__area-box-logo two">

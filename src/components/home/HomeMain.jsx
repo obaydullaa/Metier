@@ -10,8 +10,6 @@ import HomeVideo from './HomeVideo'
 function HomeMain() {
   return (
     <>
-        <div className="custom__cursor-one main"></div>
-        <div className="custom__cursor-two main"></div>
     
         {/* <div className="theme-loader">
             <div className="spinner">

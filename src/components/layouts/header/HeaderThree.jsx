@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function HeaderThree() {
   return (
     <>
-        <div className="header-img-menu header__area three all-page">
+        <div className="header-img-menu header__area three">
             <div className="container custom-container">
                 <div className="header__area-box">
                     <div className="header__area-box-logo">

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 function HeaderMain() {
   return (
     <>
-        <div className="header__area all-page">
+        <div className="header__area">
             <div className="container custom-container">
                 <div className="header__area-box">
                     <div className="header__area-box-logo">
