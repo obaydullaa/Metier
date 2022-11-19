@@ -2,22 +2,52 @@ import React from 'react'
 import { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import PortfolioData from './portfoliodata';
-
-
+import {PortfolioItem, PortfolioMenuData } from './portfoliodata';
 
 
 
 function HomeThreePortfolio() {
-    const [items, setItems] = useState(PortfolioData);
+    const [items, setItems] = useState(PortfolioItem);
+    const [menuItems, setMenuItems] = useState(PortfolioMenuData);
 
-    const filterItem = (categItem) => {
+    const [btnActive, setBtnActive] = useState(null);
+
+    let filterActiveBtn = 'active';
+
+    const filterItem = (categItem, id) => {
         console.log(categItem)
-        const updatedItems = PortfolioData.filter((curElem) => {
+        const updatedItems = PortfolioItem.filter((curElem) => {
             return curElem.category === categItem;
         });
         setItems(updatedItems)
+        
+        setBtnActive(id)
     }
+
+    const handleClick = (menu) => {
+    // modified clicked menu isActive field
+    const modifiedMenus = menuItems.map((singleMenu) => {
+        if (singleMenu.id === menu.id) {
+          singleMenu.isActive = true;
+          return singleMenu;
+        } else {
+          singleMenu.isActive = false;
+          return singleMenu;
+        }
+      });
+      setMenuItems(modifiedMenus)
+
+          // filtered data
+    const filteredProjects = projectsDataFromDB.filter((project) =>
+    menu?.keyword?.toLowerCase() === "all"
+      ? project
+      : project?.tags?.toLowerCase().includes(menu?.keyword?.toLowerCase())
+  );
+  setProjects(filteredProjects);
+
+    }
+    
+    console.log(btnActive)
 
   return (
 	<div className="portfolio__area-two section-padding">
@@ -28,13 +58,18 @@ function HomeThreePortfolio() {
 						<h2>Create Portfolio</h2> </div>
 					<div className="portfolio__area-two-btn">
 						<ul>
-							<li className="active" 
-                            onClick={() => setItems(PortfolioData)}>Show All</li>
-							<li onClick={() => filterItem('design')}>Design</li>
-							<li onClick={() => filterItem('development')}>Development</li>
-							<li onClick={() => filterItem('marketing')}>Marketing</li>
-							<li onClick={() => filterItem('strategy')}>Strategy</li>
-							<li onClick={() => filterItem('branding')}>Branding</li>
+							{
+                                menuItems.map((menu) => {
+                                    return (
+                                    <li className={ menu.isActive ? 'active' : ''}
+                                    onClick={() => handleClick(menu)}
+                                    >
+                                        {menu.label}
+                                    
+                                    </li>
+                                    )
+                                })
+                            }
 						</ul>
 					</div>
 				</div>

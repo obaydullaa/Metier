@@ -24,7 +24,7 @@ function HomeFeatures() {
                         >
                             <Swiper className="swiper-wrapper">
                                 <SwiperSlide>
-                                    <div  onMouseOver={() => handleHover(1)}  
+                                    <div onMouseOver={() => handleHover(1)}  
                                     className={` ${isHovering === 1 ? activeStyle : ''} features__area-item swiper-slide `}> 
                                 
                                     <img src="assets/img/features-1.jpg" alt="" />
@@ -41,7 +41,7 @@ function HomeFeatures() {
                                 </SwiperSlide>
                                 
                                 <SwiperSlide>
-                                    <div  onMouseOver={() => handleHover(2)}  
+                                    <div onMouseOver={() => handleHover(2)}  
                                     className={` ${isHovering === 2 ? activeStyle : ''} features__area-item swiper-slide `}> 
 
                                     <img src="assets/img/features-2.jpg" alt="" />
@@ -58,7 +58,7 @@ function HomeFeatures() {
                                 </SwiperSlide>
                                 
                                 <SwiperSlide>
-                                    <div  onMouseOver={() => handleHover(3)}  
+                                    <div onMouseOver={() => handleHover(3)}  
                                     className={` ${isHovering === 3 ? activeStyle : ''} features__area-item swiper-slide `}>
                                     
                                     <img src="assets/img/features-3.jpg" alt="" />
@@ -75,7 +75,7 @@ function HomeFeatures() {
                                 </SwiperSlide>
                                 
                                 <SwiperSlide>
-                                    <div  onMouseOver={() => handleHover(4)}  
+                                    <div onMouseOver={() => handleHover(4)}  
                                     className={` ${isHovering === 4 ? activeStyle : ''} features__area-item swiper-slide `}>  
                                     
                                     <img src="assets/img/features-4.jpg" alt="" />
@@ -91,7 +91,6 @@ function HomeFeatures() {
                                     </div>
                                 </SwiperSlide>
                                 
-
                             </Swiper>
                         </Swiper>
                     </div>

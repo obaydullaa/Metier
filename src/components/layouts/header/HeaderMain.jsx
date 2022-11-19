@@ -8,7 +8,7 @@ function HeaderMain() {
             <div className="container custom-container">
                 <div className="header__area-box">
                     <div className="header__area-box-logo">
-                            <Link to='/'> <img src="assets/img/logo-2.png"alt="" /> </Link>
+                            <Link to='/'> <img src="assets/img/logo-1.png"alt="" /> </Link>
                         <div className="responsive-menu"></div>
                     </div>
                     <div className="header__area-box-main-menu one meanmenu-responsive">
