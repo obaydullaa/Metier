@@ -9,7 +9,11 @@ import { Pagination } from "swiper";
 
 function HomeThreeReviews() {
   return (
-    <div className="reviews__area" data-background="assets/img/reviews.jpg">
+    <div className="reviews__area"
+    style={{
+        backgroundImage: `url("assets/img/reviews.jpg")`,
+    }}
+>
         <div className="container">
             <div className="row">
                 <div className="col-xl-6 col-lg-8">
