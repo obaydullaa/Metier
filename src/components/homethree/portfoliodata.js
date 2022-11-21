@@ -3,8 +3,8 @@ export const PortfolioItem = [
     {
         id: 1,
         image: 'assets/img/portfolio/portfolio-7.jpg',
-        content: 'design',
-        link:  'design',
+        content: 'Design',
+        link:  'Design',
     },
     {
         id: 2,
