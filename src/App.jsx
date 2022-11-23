@@ -67,19 +67,6 @@ function App() {
       });
 	};
   }, []);
-
-  useEffect(() => {
-    /*==========  isotope (Home - 3)  ==========*/
-    $(window).on('load', function() {
-      /*========== Project Grid  ==========*/
-
-      /*========== Project Active  ==========*/
-      // $('.portfolio__area-two-btn').on('click', 'li', function() {
-      //   $(this).siblings('.active').removeClass('active');
-      //   $(this).addClass('active');
-      // });
-    });
-  }, []);
   
   useEffect(() => {
     
