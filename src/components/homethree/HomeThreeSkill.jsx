@@ -28,25 +28,25 @@ function HomeThreeSkill() {
                 <div className="col-xl-5 col-lg-5">
                     <div className="skill__area-two-right">
 
-                        {/* {
+                        {
                             skillData.map((elem, i) => {
                                 return (
-                                    <div className="skill__area-two-right-skill">
+                                    <div key={i} className="skill__area-two-right-skill mt-30">
                                         <div className="skill__area-two-right-skill-item">
                                             <div className="skill__area-two-right-skill-item-content">
                                                 <h6>{elem.label}</h6> <span className="skill__area-two-right-skill-item-count">
-                                                <span className="counter"></span>{elem.percentageNo}</span>
+                                                {elem.percentageNo}</span>
                                             </div>
                                             <div className="skill__area-two-right-skill-item-inner">
-                                                <div className="skill__area-two-right-skill-item-bar" data-width="{elem.label}">
-                                                {elem.percentagePosition}
+                                                <div className="skill__area-two-right-skill-item-bar" data-width={elem.percentageNo}>
+                                                
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 )
                             })
-                        } */}
+                        }
               
                         
 
@@ -54,10 +54,22 @@ function HomeThreeSkill() {
                             <div className="skill__area-two-right-skill-item">
                                 <div className="skill__area-two-right-skill-item-content">
                                     <h6>Designing</h6> <span className="skill__area-two-right-skill-item-count">
-                                    <span className="counter">90</span>%</span>
+                                    <span className="counter"></span>90%</span>
                                 </div>
                                 <div className="skill__area-two-right-skill-item-inner">
                                     <div className="skill__area-two-right-skill-item-bar" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div> */}
+
+                        {/* <div className="skill__area-two-right-skill mt-30">
+                            <div className="skill__area-two-right-skill-item">
+                                <div className="skill__area-two-right-skill-item-content">
+                                    <h6>Marketing</h6> <span className="skill__area-two-right-skill-item-count">
+                                    <span className="counter">70</span>%</span>
+                                </div>
+                                <div className="skill__area-two-right-skill-item-inner">
+                                    <div className="skill__area-two-right-skill-item-bar" data-width="70"></div>
                                 </div>
                             </div>
                         </div>

@@ -57,15 +57,15 @@ function App() {
 
   useEffect(() => {
     /*==========  Skill Bar Two (Home 3)  ==========*/
-    if($('.skill__area-two-right-skill-item-bar').length) {
-      $('.skill__area-two-right-skill-item-bar').appear(function() {
-        var el = $(this);
-        var percent = el.data('width');
-        $(el).css('width', percent + '%');
-      }, {
-        accY: 0
-      });
-	};
+  //   if($('.skill__area-two-right-skill-item-bar').length) {
+  //     $('.skill__area-two-right-skill-item-bar').appear(function() {
+  //       var el = $(this);
+  //       var percent = el.data('width');
+  //       $(el).css('width', percent + '%');
+  //     }, {
+  //       accY: 0
+  //     });
+	// };
   }, []);
   
   useEffect(() => {
